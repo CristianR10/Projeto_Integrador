@@ -69,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="acessorios.html">Acessório</a></li>												
 							  </ul>
 						  </li>
-						  <li class="dropdown1"><a href="parts.html">Novidades</a>
+						  <li class="dropdown1"><a href="parts.php">Novidades</a>
 							 
 						 </li>      
 						 <li class="dropdown1"><a href="accessories.html">Salão</a>
@@ -92,8 +92,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- Formulario Rafinha -->
 		<p>Já é um membro? <a href="index.php">Entre</a></p>
 		<form method="post" action="data/gravar.php">
-			<input style="background-color:transparent" class="user" type="text" name="email"placeholder="USER@DOMAIN.COM" required=""><br>
 			<input style="background-color:transparent" class="user" type="text" name="nome"placeholder="Nome Completo" required=""><br>
+			<input style="background-color:transparent" class="user" type="text" name="email"placeholder="USER@DOMAIN.COM" required=""><br>
 			<input style="background-color:transparent" class="user" type="text" name="end"placeholder="Endereço" required=""><br>
 			<input style="background-color:transparent" type="text" name="numero"placeholder="Numero" required="">			 
 			<input style="background-color:transparent" type="text" name="comple"placeholder="Complemento" required="">	
@@ -129,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="ftr-menu">
 			 <ul>
 				 <li><a href="cremes.html">Óleos / Cremes</a></li>
-				 <li><a href="parts.html">Novidades</a></li>
+				 <li><a href="parts.php">Novidades</a></li>
 				 <li><a href="accessories.html">Salão</a></li>
 				 <li><a href="cadastro.php">Cadastre-Se!</a></li>
 			 </ul>

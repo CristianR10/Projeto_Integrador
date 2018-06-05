@@ -1,3 +1,6 @@
+<?php 
+	session_start();
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,8 +36,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 <!-- start-smoth-scrolling-->
-
-
+<!--pop -->
+<style>
+#pop{display:none;position:absolute;top:100%;left:100%;margin-left:-300px;margin-top:50px;padding:10px;width:400px;height:300px;}
+</style>
 </head>
 <body>
 <!--banner-->
@@ -50,51 +55,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
   </script>
-<div class="banner-bg banner-bg1">	
-	  <div class="container">
-			 <div class="header">
-			       <div class="logo">
-						 <a href="index.php"><img src="images/logo.svg" width="200" class="logo" alt=""/></a>
-				   </div>							 
-				  <div class="top-nav">										 
-						<label class="mobile_menu" for="mobile_menu">
+<div class="banner-bg banner-bg1">
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<a href="index.php"><img src="images/logo.svg" width="200" class="logo" alt=""/></a>
+			</div>							 
+				<div class="top-nav">										 
+					<label class="mobile_menu" for="mobile_menu">
 						<span>Menu</span>
-						</label>
-						<input id="mobile_menu" type="checkbox">
-					   <ul class="nav">
-						  <li class="dropdown1"><a href="cremes.html">Óleos / Cremes</a>
-							  <ul class="dropdown2">
+					</label>
+					<input id="mobile_menu" type="checkbox">
+					    <ul class="nav">
+							<li class="dropdown1"><a href="cremes.html">Óleos / Cremes</a>
+								<ul class="dropdown2">
 									<li><a href="oleo.html">Óleo</a></li>
 									<li><a href="cremes.html">Creme</a></li>
 									<li><a href="acessorios.html">Acessório</a></li>												
-							  </ul>
-						  </li>
-						  <li class="dropdown1"><a href="parts.html">Novidades</a>
-							 
-						 </li>      
-						 <li class="dropdown1"><a href="accessories.html">Salão</a>
-							 
-						 </li>               
-						 <li class="dropdown1"><a href="cadastro.php">Cadastre-se</a>							
-						 </li>
+								</ul>
+							</li>
+						  	<li class="dropdown1"><a href="parts.php">Novidades</a></li>      
+						  	<li class="dropdown1"><a href="accessories.html">Salão</a></li>               
+						  	<li class="dropdown1"><a href="cadastro.php">Cadastre-se</a></li>
+						  	<li class="dropdown1"><a href="login.php">Login</a></li>
+
 						  <a class="shop" href="cart.html"><img src="images/cart.png" alt=""/></a>
-					  </ul>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-	  </div>	 
+					    </ul>
+			</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>	 
 	 <div class="caption">
-		 <div class="slider">
-					   <div class="callbacks_container">
-						   <ul class="rslides" id="slider">
-							    <li><h1>Produtos para barbas</h1></li>
-								<li><h1>Entrega Rápida</h1></li>	
-								<li><h1>Barba de Respeito</h1></li>	
-						  </ul><!-- Letras amarelas-->
-						  <p>Você <span>sempre</span> com <span>classe,</span> Nós Ajudamos no seu estilo </p>
-						  <a class="morebtn" href="cremes.html">SHOP</a>
-					  </div>
-				  </div>
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li><h1>Produtos para barbas</h1></li>
+					<li><h1>Entrega Rápida</h1></li>	
+					<li><h1>Barba de Respeito</h1></li>	
+				</ul><!-- Letras amarelas-->
+					<p>Você <span>sempre</span> com <span>classe,</span> Nós Ajudamos no seu estilo </p>
+					<a class="morebtn" href="cremes.html">SHOP</a>
+			</div>
+		</div>
 	 </div>
 	 <div class="dwn">
 		<a class="scroll" href="#cate"><img src="images/scroll.svg" width="130px" alt=""/></a>
@@ -250,7 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="ftr-menu">
 			 <ul>
 				 <li><a href="cremes.html">Óleos / Cremes</a></li>
-				 <li><a href="parts.html">Novidades</a></li>
+				 <li><a href="parts.php">Novidades</a></li>
 				 <li><a href="accessories.html">Salão</a></li>
 				 <li><a href="cadastro.php">Cadastre-Se!</a></li>
 			 </ul>
@@ -266,7 +268,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </body>
 </html>
-
 
 
 

@@ -1,4 +1,3 @@
-
 <?php 
 
 $servidor = 'localhost';
@@ -13,10 +12,6 @@ $mysqli = new mysqli
 if (mysqli_connect_error())
 		trigger_error(mysqli_connect_error());
 
-
-
- ?>
-<?php 
 
 $email = $_POST['email'];
 $nome = $_POST['nome'];
@@ -34,14 +29,10 @@ md5('$senha1'))";
 
 $query = $mysqli->query($sql);
 
-echo "<fieldset>";
-echo "<center><img src='checked.jpg' width='20%'>";
-echo "<br><br><br>";
-echo "<font color='red'>";
+
 echo "<h1> Inclusão realizada com sucesso<br>";
 echo "<br><br>";
-echo "<a href ='../cadastro.php'>voltar</a></h1>";
-echo "</font></center>";        
-echo "</fieldset>";
+echo "<a href ='../index.php'>voltar</a></h1>";
+
 
  ?>
