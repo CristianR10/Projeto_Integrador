@@ -23,12 +23,13 @@ VALUES ('NULL', '1', 'cristian_hiei@hotmail.com', 'Cristian Renato Andrade Melo'
 insert into `clientes` (`id`, `adm`, `email`, `nome`, `endereco`, `numero`, `complemento`, `telefone`, `celular`, `senha`)
 VALUES ('NULL', '0', 'daniel@daniel.com', 'Daniel kun', 'Rua liberdade', '538', '', '1120851400', '11951092298', '1234')
 
-CREATE TABLE IF NOT EXISTS `niveis_acessos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE IF NOT EXISTS niveis_acessos (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  nome varchar(50) NOT NULL,
+  created datetime NOT NULL,
+tipo datetime NOT NULL,
+  modified datetime DEFAULT NULL,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 INSERT INTO `niveis_acessos` (`id`, `nome`, `created`, `modified`) VALUES

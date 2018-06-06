@@ -15,17 +15,20 @@
 			 <input type="submit" value="Entrar">
 			
 		</form>
-		<?php
-		if ($gets[0] == "login")
-		{
-			$user = isset ($_POST['login']) ? anti_injection ($_POST['login']) : NULL;
-			$senha = isset ($_POST['senha']) ? md5 (anti_injection ($_POST['senha'])) : NULL;
-			$reconhecer = isset ($_POST['reconhecer']) ? $_POST['reconhecer'] : "n";
-			
-			$Login = new Login;
-			$Login->AutenticarUsuario ($user, $senha, $reconhecer);
-		}
-		?>
+		<p class="text-center text-danger">
+			<?php if(isset($_SESSION['loginErro'])){
+				echo $_SESSION['loginErro'];
+				unset($_SESSION['loginErro']);
+			}?>
+		</p>
+		<p class="text-center text-success">
+			<?php 
+			if(isset($_SESSION['logindeslogado'])){
+				echo $_SESSION['logindeslogado'];
+				unset($_SESSION['logindeslogado']);
+			}
+			?>
+		</p>
 
 </body>
 </html>

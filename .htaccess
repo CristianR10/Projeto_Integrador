@@ -1,0 +1,14 @@
+HTACCESS PARA URL AMIGÁVEL
+
+<IfModule mod_rewite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} ! -f
+RewriteCond %{REQUEST_FILENAME} ! -d
+
+RewriteRule ^(.*)$ index.php?pag=$1 [L,QSA]
+</IfModule>
+
+<FIles *.tpl>
+	Order deny,allow
+	Deny from All
+</Files>

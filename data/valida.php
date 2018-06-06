@@ -11,7 +11,11 @@
 		($servidor, $usuario, $senha, $banco);
 
 	if (mysqli_connect_error())
-			trigger_error(mysqli_connect_error());	
+			trigger_error(mysqli_connect_error());
+
+	if (isset($_POST['email'])) && (isset($mysqli, )) {
+			# code...
+		}	
 	//O campo usuário e senha preenchido entra no if para validar
 	if((isset($_POST['email'])) && (isset($sql, $_POST['senha1']))){
 		$cliente = mysqli_real_escape_string($sql, $_POST['email']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection
